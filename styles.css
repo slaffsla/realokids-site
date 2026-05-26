@@ -55,19 +55,54 @@ a {
 .brand-mark {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 11px;
   color: var(--text);
   font-size: 15px;
   font-weight: 700;
   text-decoration: none;
 }
 
-.brand-dot {
-  width: 18px;
-  height: 18px;
-  border-radius: 50%;
-  background: var(--green);
-  box-shadow: inset 5px -5px 0 rgba(255, 255, 255, 0.2);
+.brand-symbol {
+  position: relative;
+  width: 28px;
+  height: 28px;
+  display: inline-grid;
+  place-items: center;
+}
+
+.brand-shield {
+  width: 28px;
+  height: 28px;
+  border: 1px solid #16553f;
+  border-radius: 10px 10px 12px 12px;
+  background: linear-gradient(180deg, #2d8766 0%, #1d6b4f 100%);
+  clip-path: polygon(10% 0%, 90% 0%, 100% 32%, 82% 92%, 50% 100%, 18% 92%, 0% 32%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.28);
+}
+
+.brand-smile {
+  position: absolute;
+  width: 12px;
+  height: 7px;
+  border-bottom: 2px solid #ffffff;
+  border-radius: 0 0 12px 12px;
+  transform: translateY(2px);
+}
+
+.brand-text-wrap {
+  display: inline-grid;
+  gap: 0;
+}
+
+.brand-name {
+  line-height: 1.05;
+}
+
+.brand-sub {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.15;
 }
 
 .site-nav {
@@ -208,48 +243,76 @@ h2 {
 }
 
 .app-preview {
+  position: relative;
   height: 100%;
   padding: 44px 20px 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background: var(--bg);
+  overflow: hidden;
+}
+
+.app-screen-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .buddy-face {
-  width: 132px;
-  height: 132px;
-  margin: 14px 0 16px;
+  position: relative;
+  z-index: 2;
+  width: 140px;
+  height: 140px;
+  margin: 22px 0 16px;
   display: grid;
   place-items: center;
   border: 1px solid var(--green-line);
   border-radius: 50%;
-  background: var(--green-soft);
+  background: rgba(225, 245, 238, 0.9);
+  overflow: hidden;
+  backdrop-filter: blur(1px);
 }
 
-.buddy-face span {
-  width: 70px;
-  height: 48px;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 25% 38%, var(--text) 0 4px, transparent 5px),
-    radial-gradient(circle at 75% 38%, var(--text) 0 4px, transparent 5px),
-    radial-gradient(ellipse at 50% 76%, transparent 0 14px, var(--green) 15px 17px, transparent 18px);
+.buddy-avatar {
+  width: 128px;
+  height: 128px;
+  object-fit: contain;
+  transform-origin: center;
+  animation: buddy-breath 5.6s ease-in-out infinite;
+}
+
+@keyframes buddy-breath {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.08);
+  }
 }
 
 .app-line {
+  position: relative;
+  z-index: 2;
   margin-bottom: 16px;
   font-size: 21px;
   font-weight: 700;
+  text-shadow: 0 2px 10px rgba(255, 255, 255, 0.5);
 }
 
 .mission-card {
+  position: relative;
+  z-index: 2;
   width: 100%;
   margin-bottom: 10px;
   padding: 14px;
   border: 1px solid var(--green-line);
   border-radius: 14px;
-  background: var(--paper);
+  background: rgba(255, 253, 249, 0.9);
+  backdrop-filter: blur(2px);
 }
 
 .mission-card span,
@@ -270,6 +333,8 @@ h2 {
 }
 
 .mission-button {
+  position: relative;
+  z-index: 2;
   width: 100%;
   margin-top: auto;
   padding: 15px 18px;
@@ -485,6 +550,10 @@ figcaption {
   .site-nav {
     gap: 12px;
     font-size: 13px;
+  }
+
+  .brand-sub {
+    display: none;
   }
 
   .hero,
