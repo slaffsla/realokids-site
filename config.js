@@ -15,7 +15,7 @@ window.REALO_KIDS_CONFIG = {
     {
       src: "/assets/AppScreenshot3.jpeg",
       alt: "Realo Kids breathing or routine screen",
-      label: "Calm routines",
+      label: "Real world rewards",
     },
   ],
 };

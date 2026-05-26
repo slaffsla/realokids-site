@@ -5,10 +5,11 @@ Static landing site for `realokids.com`, ready for Cloudflare Pages.
 ## Replace before launch
 
 - Update `playStoreUrl` in `config.js`.
-- Add the three app screenshots at the site root:
-  - `AppScreenshot1.png`
-  - `AppScreenshot2.png`
-  - `AppScreenshot3.png`
+- Add or replace the app screenshots in `assets/`:
+  - `AppScreenshot1.jpeg`
+  - `AppScreenshot2.jpeg`
+  - `AppScreenshot3.jpeg`
+  - `AppScreenshot4.jpeg`
 
 ## Cloudflare Pages
 
