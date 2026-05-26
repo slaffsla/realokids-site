@@ -258,9 +258,9 @@ h2 {
 .buddy-face {
   position: relative;
   z-index: 2;
-  width: 140px;
-  height: 140px;
-  margin: 2px 0 16px;
+  width: 135px;
+  height: 135px;
+  margin: 0px 0 16px;
   display: grid;
   place-items: center;
   border: 1px solid var(--green-line);
@@ -271,8 +271,8 @@ h2 {
 }
 
 .buddy-avatar {
-  width: 128px;
-  height: 128px;
+  width: 122px;
+  height: 122px;
   object-fit: contain;
   transform-origin: center;
   animation: buddy-breath 5.6s ease-in-out infinite;
