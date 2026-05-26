@@ -260,7 +260,7 @@ h2 {
   z-index: 2;
   width: 135px;
   height: 135px;
-  margin: 0px 0 16px;
+  margin: -10px 0 16px;
   display: grid;
   place-items: center;
   border: 1px solid var(--green-line);
