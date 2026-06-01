@@ -1,6 +1,6 @@
 window.REALO_KIDS_CONFIG = {
   playStoreUrl:
-    "https://play.google.com/store/apps/details?id=com.slaff.realokids",
+    "https://play.google.com/apps/testing/com.slaff.realokids",
   screenshots: [
     {
       src: "/assets/AppScreenshot1.jpeg",
