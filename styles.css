@@ -267,8 +267,8 @@ h2 {
   top: 44px;
   left: 50%;
   z-index: 2;
-  width: 144px;
-  height: 144px;
+  width: 130px;
+  height: 130px;
   margin: 0;
   display: grid;
   place-items: center;
@@ -280,8 +280,8 @@ h2 {
 }
 
 .buddy-avatar {
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
   object-fit: contain;
   transform-origin: center;
   animation: buddy-breath 5.6s ease-in-out infinite;
