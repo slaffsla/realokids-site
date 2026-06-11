@@ -3,17 +3,17 @@ window.REALO_KIDS_CONFIG = {
     "https://play.google.com/apps/testing/com.slaff.realokids",
   screenshots: [
     {
-      src: "/assets/AppScreenshot1.jpeg",
+      src: "/assets/AppScreenshot1.png",
       alt: "Realo Kids home screen with Buddy and small missions",
       label: "Home",
     },
     {
-      src: "/assets/AppScreenshot2.jpeg",
+      src: "/assets/AppScreenshot2.png",
       alt: "Realo Kids mission picker with gentle real-world tasks",
       label: "Missions",
     },
     {
-      src: "/assets/AppScreenshot3.jpeg",
+      src: "/assets/AppScreenshot3.png",
       alt: "Realo Kids breathing or routine screen",
       label: "Real world rewards",
     },
