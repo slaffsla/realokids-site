@@ -235,7 +235,7 @@ h2 {
   width: min(100%, 342px);
   aspect-ratio: 1280 / 2856;
   border-radius: 42px;
-  background: red;
+  background: transparent;
   box-shadow: var(--shadow);
   overflow: hidden;
 }
