@@ -235,7 +235,7 @@ h2 {
   width: min(100%, 342px);
   aspect-ratio: 1280 / 2856;
   border-radius: 42px;
-  background: transparent;
+  background: red;
   box-shadow: var(--shadow);
   overflow: hidden;
 }
@@ -264,25 +264,24 @@ h2 {
 
 .buddy-face {
   position: absolute;
-  top: 28px;
+  top: 30px;
   left: 50%;
   z-index: 2;
-  width: 138px;
-  height: 138px;
+  width: 166px;
+  height: 166px;
   margin: 0;
   display: grid;
   place-items: center;
-  border: 1px solid var(--green-line);
+  border: 0;
   border-radius: 50%;
-  background: rgba(225, 245, 238, 0.9);
+  background: var(--bg);
   overflow: hidden;
-  backdrop-filter: blur(1px);
   transform: translateX(-50%);
 }
 
 .buddy-avatar {
-  width: 126px;
-  height: 126px;
+  width: 150px;
+  height: 150px;
   object-fit: contain;
   transform-origin: center;
   animation: buddy-breath 5.6s ease-in-out infinite;
@@ -402,9 +401,9 @@ h2 {
 
 .screenshot-frame {
   aspect-ratio: 1280 / 2856;
-  border-radius: 34px;
+  border-radius: 0;
   background: transparent;
-  box-shadow: 0 14px 42px rgba(35, 49, 42, 0.1);
+  box-shadow: none;
   overflow: hidden;
 }
 
@@ -412,10 +411,12 @@ h2 {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
   object-position: top center;
-  border-radius: inherit;
+  border-radius: 0;
   background: transparent;
+  transform: scale(1.035);
+  transform-origin: top center;
 }
 
 .screenshot-frame.is-placeholder {
