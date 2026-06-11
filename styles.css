@@ -264,11 +264,11 @@ h2 {
 
 .buddy-face {
   position: absolute;
-  top: 30px;
+  top: 44px;
   left: 50%;
   z-index: 2;
-  width: 166px;
-  height: 166px;
+  width: 144px;
+  height: 144px;
   margin: 0;
   display: grid;
   place-items: center;
