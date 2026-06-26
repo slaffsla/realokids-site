@@ -30,7 +30,7 @@ window.REALO_KIDS_CONFIG = {
       src: "/assets/Screenshot5.png",
       alt: "Realo Kids parent controls for missions, rewards, and daily routines",
       label: "Adjust the routine",
-      description: "Parents can tune missions, timing, and rewards.",
+      description: "Parents can tune missions and routines, their timing and rewards.",
     },
     {
       src: "/assets/Screenshot6.png",
