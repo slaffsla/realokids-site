@@ -35,7 +35,15 @@
     });
 
     const caption = document.createElement("figcaption");
-    caption.textContent = shot.label || `Screenshot ${index + 1}`;
+    const captionTitle = document.createElement("strong");
+    captionTitle.textContent = shot.label || `Screenshot ${index + 1}`;
+    caption.appendChild(captionTitle);
+
+    if (shot.description) {
+      const captionDescription = document.createElement("span");
+      captionDescription.textContent = shot.description;
+      caption.appendChild(captionDescription);
+    }
 
     frame.appendChild(img);
     figure.appendChild(frame);

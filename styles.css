@@ -393,18 +393,23 @@ h2 {
 .screenshot-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
+  gap: 26px;
 }
 
 .screenshot-card {
   margin: 0;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--paper);
+  box-shadow: 0 12px 32px rgba(35, 49, 42, 0.08);
 }
 
 .screenshot-frame {
   aspect-ratio: 1280 / 2856;
-  border-radius: 0;
-  background: transparent;
-  box-shadow: none;
+  border: 1px solid rgba(222, 216, 206, 0.7);
+  border-radius: 6px;
+  background: #fbfaf6;
   overflow: hidden;
 }
 
@@ -414,7 +419,7 @@ h2 {
   display: block;
   object-fit: cover;
   object-position: top center;
-  border-radius: 0;
+  border-radius: 6px;
   background: transparent;
   transform: scale(1.035);
   transform-origin: top center;
@@ -449,11 +454,27 @@ h2 {
 }
 
 figcaption {
-  padding: 10px 4px 0;
+  min-height: 86px;
+  padding: 14px 4px 2px;
+  display: grid;
+  align-content: start;
+  gap: 5px;
   color: var(--muted);
   font-size: 14px;
-  font-weight: 650;
   text-align: center;
+}
+
+figcaption strong {
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 750;
+  line-height: 1.25;
+}
+
+figcaption span {
+  max-width: 25ch;
+  margin: 0 auto;
+  line-height: 1.35;
 }
 
 .privacy-band {
