@@ -241,7 +241,7 @@ h2 {
 }
 
 .phone-shell-main {
-  transform: rotate(1.5deg);
+  transform: none;
 }
 
 .app-preview {
